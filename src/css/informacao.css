@@ -31,6 +31,12 @@ main {
   background-color: lavender;
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.titulo_capa {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
