@@ -10,18 +10,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/informacao.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/imgIcon/favicon.ico"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informação Filmes</title>
   </head>
   <body>
-    <header class="navbar navbar-expand-lg navbar-light mb-4">
+    <header class="navbar navbar-expand-lg navbar-light">
       <nav class="container-fluid">
         <img
           src="../assets/imgIcon/sharkflixLogo.png"
           class="logo"
           alt="logo"
         />
-
         <button
           class="navbar-toggler"
           type="button"
@@ -36,32 +40,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="corLink"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="corLink" href="./pesquisa.html"
-                >Pesquisar</a
-              >
+              <a class="nav-link" href="./pesquisa.html">Pesquisar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contato.html">Contato</a>
             </li>
           </ul>
+          <form class="d-flex">
+            <a
+              href="./html/login.html"
+              class="text-white btn bg-dark"
+              type="submit"
+              >Login</a
+            >
+          </form>
         </div>
       </nav>
     </header>
     <main>
       <div class="principal container">
         <div class="row">
-          <div class="col titulo_capa">
+          <div class="col centro">
             <h1 class="titulo"></h1>
-            <img class="capa" src="" alt="" />
+            <img class="capa" src="" alt="capa do filme" />
+
           </div>
           <div class="col">
             <h4>Ano</h4>
@@ -79,7 +86,6 @@
           </div>
         </div>
       </div>
-      <div class="secundaria"></div>
     </main>
     <footer class="text-center p-3" id="footerPrincipal">
       <p class="m-0">
@@ -99,9 +105,6 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="../js/controller/homeController.js"></script> -->
-    <!-- <script src="../src/js/main.js"></script> -->
-    <!-- <script>requisicao('tt0166813')</script> -->
     <script src="../js/view/infoFilmesView.js"></script>
     <script src="../js/controller/infoFilmesController.js"></script>
     <script src="../js/informacoesFilmes.js"></script>
